@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="MoneyConverter.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MoneyConverter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    	<TextBlock HorizontalAlignment="Left" Height="105" Margin="272,30,0,0" TextWrapping="Wrap" Text="Simple Currency Converter" VerticalAlignment="Top" Width="906" FontSize="72"/>
+    	<TextBlock HorizontalAlignment="Left" Height="55" Margin="119,188,0,0" TextWrapping="Wrap" Text="MYR" VerticalAlignment="Top" Width="78" FontSize="33.333" RequestedTheme="Dark" TextAlignment="Center"/>
+    	<TextBox x:Name="rmInput" HorizontalAlignment="Left" Height="55" Margin="208,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize="33.333" TextAlignment="Center" KeyDown="rmInput_KeyDown"/>
+    	<Button x:Name="SingDollar" Content="Singapore (SGD)" HorizontalAlignment="Left" Height="80" Margin="205,308,0,0" VerticalAlignment="Top" Width="394" FontSize="32" Click="SingDollar_Click"/>
+    	<TextBox x:Name="convertOutput" HorizontalAlignment="Left" Height="55" Margin="847,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" FontSize="33.333" TextAlignment="Center"/>
+    	<TextBlock HorizontalAlignment="Left" Height="55" Margin="619,188,0,0" TextWrapping="Wrap" Text="Convert to" VerticalAlignment="Top" Width="198" FontSize="33.333" RequestedTheme="Dark" TextAlignment="Center"/>
+    	<Button x:Name="AusDollar" Content="Australia (AUD)" HorizontalAlignment="Left" Height="80" Margin="844,308,0,0" VerticalAlignment="Top" Width="394" FontSize="32" Click="AusDollar_Click"/>
+    	<Button x:Name="IndoRp" Content="Indonesia (Rp)" HorizontalAlignment="Left" Height="80" Margin="205,424,0,0" VerticalAlignment="Top" Width="394" FontSize="32" Click="IndoRp_Click"/>
+    	<Button x:Name="ThaiBaht" Content="Thailand (THB)" HorizontalAlignment="Left" Height="80" Margin="205,544,0,0" VerticalAlignment="Top" Width="394" FontSize="32" Click="ThaiBaht_Click"/>
+    	<Button x:Name="ChiRmb" Content="China (RMB)" HorizontalAlignment="Left" Height="80" Margin="205,656,0,0" VerticalAlignment="Top" Width="394" FontSize="32" Click="ChiRmb_Click"/>
+    	<Button x:Name="UkPound" Content="United Kingdom (GBP)" HorizontalAlignment="Left" Height="74" Margin="847,427,0,0" VerticalAlignment="Top" Width="391" FontSize="32" Click="UkPound_Click"/>
+    	<Button x:Name="UsUsd" Content="United States (USD)" HorizontalAlignment="Left" Height="74" Margin="850,547,0,0" VerticalAlignment="Top" Width="385" FontSize="32" Click="UsUsd_Click"/>
+    	<Button x:Name="EuroDollar" Content="Europe (EUR)" HorizontalAlignment="Left" Height="74" Margin="853,659,0,0" VerticalAlignment="Top" Width="382" FontSize="32" Click="EuroDollar_Click"/>
+
+    </Grid>
+</Page>
